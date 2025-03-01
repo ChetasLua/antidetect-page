@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anti-Detection Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Anti-Detection Demo Page</h1>
+        <p>This is a basic anti-detection HTML page hosted on GitHub Pages.</p>
+        <p>You can customize this file with your specific anti-detection content.</p>
+        <div id="browser-info"></div>
+    </div>
+
+    <script>
+        // Basic browser information display
+        document.addEventListener('DOMContentLoaded', function() {
+            const browserInfoDiv = document.getElementById('browser-info');
+            browserInfoDiv.innerHTML = `
+                <h3>Your Browser Information:</h3>
+                <p>User Agent: ${navigator.userAgent}</p>
+                <p>Platform: ${navigator.platform}</p>
+                <p>Vendor: ${navigator.vendor || 'Not available'}</p>
+                <p>Screen Resolution: ${window.screen.width} x ${window.screen.height}</p>
+                <p>Color Depth: ${window.screen.colorDepth}</p>
+            `;
+        });
+    </script>
+</body>
+</html>
